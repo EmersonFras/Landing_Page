@@ -91,7 +91,7 @@ a{
 }
 
 .hero-img {
-    height: 300px;
+    height: auto;
     min-width: 500px;
     border-style: solid;
     align-self: center;
@@ -130,19 +130,24 @@ button {
 .images {
     display: flex;
     justify-content: center;
-    gap: 64px;
+    gap: 32px;
 }
 
 .images img {
     display: flex;
-    min-height: 200px;
-    min-width: 200px;
+    height: 200px;
+    width: auto;
+    padding: 8px;
     border: #3882F6 solid 4px;
     border-radius: 10px;
 }
 
 .info {
-    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 250px;
 }
 
 /* Quote */
