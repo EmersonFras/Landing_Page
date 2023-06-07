@@ -1,15 +1,16 @@
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    height: 100vh;
 }
 
-.hero {
+.header, .container {
     background-color: #1F2937;
 }
 
@@ -31,7 +32,7 @@ a, .subtext {
 }
 
 .logo {
-    flex: 1;
+    margin-right: auto;
     font-weight: 700;
 }
 
@@ -53,20 +54,18 @@ a{
 /* Hero */
 
 .container {
-    flex-grow: 0;
+    flex: 1;
     display: flex;
-    
     align-items: center;
     justify-content: center;
     overflow: hidden;
-
 }
 
 .text {
     display: flex;
     flex-direction: column;
+    max-width: 532px;
     padding: 32px;
-
 }
 
 .main {
@@ -75,13 +74,16 @@ a{
 }
 
 .subtext {
-    max-width: 400px;
     font-size: 18px;
 }
 
-img {
+.main, .subtext {
+    margin: 10px;
+}
+
+.hero-img {
     height: 200px;
-    min-width: 500px;
+    min-width: 300px;
     border-style: solid;
     align-self: center;
 }
@@ -93,4 +95,37 @@ button {
     margin-top: 8px;
     padding: 8px 32px;
     border-radius: 10px;
+}
+
+
+
+/* Below Hero */
+
+.title, .images {
+    text-align: center;
+}
+
+.title {
+    margin: 32px 0px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+}
+
+.images img {
+    display: flex;
+    min-height: 150px;
+    min-width: 150px;
+    border: #3882F6 solid 4px;
+    border-radius: 10px;
+}
+
+.info {
+    max-width: 200px;
 }
